@@ -1,8 +1,9 @@
+import SearchBar from "./SearchBar";
 
 function App() {
   return (
     <div className="App">
-      App
+      <SearchBar />
     </div>
   );
 }
