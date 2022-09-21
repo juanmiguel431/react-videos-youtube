@@ -1,11 +1,19 @@
+import React from "react";
 import SearchBar from "./SearchBar";
 
-function App() {
-  return (
-    <div className="App ui container">
-      <SearchBar />
-    </div>
-  );
+class App extends React.Component {
+
+  onSearch = (term) => {
+    console.log(term);
+  };
+
+  render() {
+    return (
+      <div className="App ui container">
+        <SearchBar onSearch={this.onSearch}/>
+      </div>
+    );
+  }
 }
 
 export default App;
