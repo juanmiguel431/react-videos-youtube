@@ -9,7 +9,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App ui container">
+      <div className="app ui container">
         <SearchBar onSearch={this.onSearch}/>
       </div>
     );
