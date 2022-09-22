@@ -6,7 +6,9 @@ const youtube = axios.create({
   method: 'GET',
   params: {
     key: KEY,
-    part: 'snippet'
+    type: 'video',
+    part: 'snippet',
+    maxResults: 5
   }
 });
 
