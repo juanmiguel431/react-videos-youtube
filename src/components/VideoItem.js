@@ -1,3 +1,4 @@
+import './VideoItem.css';
 
 const VideoItem = ({video}) => {
   return (
@@ -5,7 +6,6 @@ const VideoItem = ({video}) => {
       <img className="ui image" src={video.snippet.thumbnails.medium.url} alt=""/>
       <div className="content">
         <div className="header">{video.snippet.title}</div>
-        <div className="description"></div>
       </div>
     </div>
   );
